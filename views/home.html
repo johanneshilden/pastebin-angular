@@ -1,0 +1,27 @@
+<div ng-show="fresh">
+    <div class="alert alert-success" role="alert">
+        The code snippet was successfully created.
+    </div>
+</div>
+<div ng-show="!items.length">
+    <div class="well well-lg">
+        You have not yet pasted any code snippets. <a href="#/paste">Click here</a> to get started!
+    </div>
+</div>
+<div class="panel panel-default" ng-show="!!items.length">
+    <div class="panel-heading"><h5>List of code snippets</h5></div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="paste in items">
+                <td><a href="#/view/{{paste.index}}">{{paste.title}}</a></td>
+                <td>{{paste.language}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
