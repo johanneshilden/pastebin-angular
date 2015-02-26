@@ -47,7 +47,7 @@
      });
 
     pastebin.controller('mainController', function($scope) {
-        $scope.items = angular.copy(pasteDb);
+        $scope.items = angular.copy(pasteDb).reverse();
         $scope.fresh = newMsgFlag;
         newMsgFlag = false;
     });
