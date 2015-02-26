@@ -3,7 +3,7 @@
  *
  * (c) 2015 Johannes Hildén
  *
- * MIT Licensed or something...
+ * MIT License or something...
  *
  */
 (function(){
